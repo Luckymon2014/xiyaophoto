@@ -1,0 +1,16 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">{{title}}</view>
+    <view class="page__desc">{{descriptionDetail}}</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-grids">
+      <view>
+        <image class="weui-grid" mode="aspectFill" wx:for="{{photos}}" wx:key="unique" src="{{item}}" data-index="{{index}}" bindtap="previewImage"></image>
+      </view>
+    </view>
+  </view>
+  <navigator url="../photo" open-type="navigateBack">
+    <button class="weui-btn" type="primary" plain="true">返回</button>
+  </navigator>
+</view>

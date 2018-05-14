@@ -1,0 +1,41 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">联系我们</view>
+        <view class="page__desc">欢迎打扰o(*≧▽≦)ツ</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+                <template is="contact" data="{{...contact.xiaoyao}}" />
+                <template is="contact" data="{{...contact.xiaoye}}" />
+            </view>
+        </view>
+    </view>
+</view>
+
+<!-- template -->
+<template name="contact">
+    <view class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{photo}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-flex__item">
+                <image src="/resources/icons/name.png" mode="scaleToFill" />
+                <text space="ensp"> {{name}}</text>
+            </view>
+            <view class="weui-flex__item">
+                <image src="/resources/icons/qq.png" mode="scaleToFill" />
+                <text space="ensp"> {{qq}}</text>
+            </view>
+            <view class="weui-flex__item">
+                <image src="/resources/icons/wechat.png" mode="scaleToFill" />
+                <text space="ensp"> {{wechat}}</text>
+            </view>
+            <view class="weui-flex__item">
+                <image src="/resources/icons/weibo.png" mode="scaleToFill" />
+                <text space="ensp"> {{weibo}}</text>
+            </view>
+        </view>
+    </view>
+</template>
