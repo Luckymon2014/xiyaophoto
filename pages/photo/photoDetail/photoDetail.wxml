@@ -1,7 +1,7 @@
 <view class="page">
   <view class="page__hd">
     <view class="page__title">{{title}}</view>
-    <view class="page__desc">{{descriptionDetail}}</view>
+    <text class="page__desc">{{descriptionDetail}}</text>
   </view>
   <view class="page__bd">
     <view class="weui-grids">
