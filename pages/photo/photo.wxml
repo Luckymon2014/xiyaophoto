@@ -1,7 +1,7 @@
 <view class="page">
     <view class="page__hd">
         <view class="page__title">我们的作品</view>
-        <view class="page__desc">哈哈哈哈哈哈哈哈哈</view>
+        <view class="page__desc">～(￣▽￣～)(～￣▽￣)～</view>
     </view>
     <view class="page__bd">
         <template is="photo" wx:for="{{photo}}" wx:key="unique" data="{{...item}}" />
