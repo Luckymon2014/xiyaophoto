@@ -4,7 +4,7 @@
         <view class="page__desc">～(￣▽￣～)(～￣▽￣)～</view>
     </view>
     <view class="page__bd">
-        <template is="photo" wx:for="{{photo}}" wx:key="unique" data="{{...item}}" />
+        <template is="photo" wx:for="{{photoList}}" wx:key="unique" data="{{...item}}" />
     </view>
 </view>
 
@@ -14,7 +14,7 @@
         <view class="weui-article__h1">{{title}}</view>
         <view class="weui-article__section">
             <text class="weui-article__p">{{description}}</text>
-            <navigator url="/pages/photo/photoDetail/photoDetail?id={{id}}&title={{title}}&grid1={{grid1}}&grid2={{grid2}}&grid3={{grid3}}&grid4={{grid4}}&grid5={{grid5}}&grid6={{grid6}}&grid7={{grid7}}&grid8={{grid8}}&grid9={{grid9}}&grid1={{grid1}}">
+            <navigator url="/pages/photo/photoDetail/photoDetail?title={{title}}&descriptionDetail={{descriptionDetail}}&grid1={{grid1}}&grid2={{grid2}}&grid3={{grid3}}&grid4={{grid4}}&grid5={{grid5}}&grid6={{grid6}}&grid7={{grid7}}&grid8={{grid8}}&grid9={{grid9}}&grid1={{grid1}}">
                 <image class="weui-article__img" mode="widthFix" src="{{photo}}" />
             </navigator>
         </view>

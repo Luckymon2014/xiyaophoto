@@ -1,33 +1,35 @@
 Page({
   data: {
-    "photo": {
+    "photoList": {
       "photo1": {
-        "id": 1,
-        "title": "《那些你们喜欢的不喜欢的我都喜欢的女孩——（一）》",
+        "title": "《想对你说的话 都在星星里》",
         "description":
-          "出镜：@仙璃璃回归哥特\n" +
-          "摄：削爷 & 李肖遥\n" +
-          "妆造、后期：李肖遥\n" +
-          "裙：@长耳朵与尖耳朵\n" +
-          "鞋：@仙太郎Sentaro\n" +
-          "披肩，手套，花丸：@仙璃璃回归哥特",
-        "photo": "../../resources/photos/photo1.jpg",
-        "grid1": "https://wx2.sinaimg.cn/mw690/6029e1d2gy1fr0gy8pi26j21n662ru10.jpg",
-        "grid2": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fr0gzntvo3j21n662r4qs.jpg",
-        "grid3": "https://wx3.sinaimg.cn/mw690/6029e1d2gy1fr0gywa9gvj20qn2qmtqn.jpg",
-        "grid4": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fr0h3botb4j21n662r4qs.jpg",
-        "grid5": "https://wx2.sinaimg.cn/mw690/6029e1d2gy1fr0gyg99e3j21n662ru10.jpg",
-        "grid6": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fr0gyts3fwj21n662rnpf.jpg",
-        "grid7": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fr0gynhux4j21n662r7wk.jpg",
-        "grid8": "https://wx2.sinaimg.cn/mw690/6029e1d2gy1fr0h3tbnmgj20qn2qm1dd.jpg",
-        "grid9": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fr0h349d43j21n662rkjo.jpg"
+          "摄，后期：李肖遥\n" +
+          "出镜：@温柔少女鹿\n" +
+          "服装：@栗2011 \n" +
+          "棚：@NEKORA猫罗万象摄影工作室​​",
+        "descriptionDetail": "",
+        "photo": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fpdpk90fyxj22kw3vcqvd.jpg",
+        "grid1": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpde8vabj20qo140wkc.jpg",
+        "grid2": "https://wx3.sinaimg.cn/mw690/6029e1d2gy1fpdpdf4t9xj21400qotdn.jpg",
+        "grid3": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpdfvizrj20qo1400ym.jpg",
+        "grid4": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpdcszl4j20qo140agy.jpg",
+        "grid5": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fpdpk90fyxj22kw3vcqvd.jpg",
+        "grid6": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpejg3h8j20qo140afj.jpg",
+        "grid7": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpekckg6j20qo140wjs.jpg",
+        "grid8": "https://wx3.sinaimg.cn/mw690/6029e1d2gy1fpdpdgmdl9j20qo140q8m.jpg",
+        "grid9": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpel9qs7j20qo140n2i.jpg"
       },
       "photo2": {
-        "id": 2,
         "title": "《谷雨》",
         "description":
           "出镜：@邢静雨- \n" +
           "摄：李肖遥",
+        "descriptionDetail":
+          "管你是床前明月光\n" +
+          "还是胸口朱砂痣\n" +
+          "明天\n" +
+          "自然未知\n",
         "photo": "https://wx3.sinaimg.cn/mw690/6029e1d2gy1fqjk3xhu2nj21e00xc41o.jpg",
         "grid1": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fqjk3xyf1qj20xc1e076u.jpg",
         "grid2": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fqjk40lxosj21e00xctd8.jpg",
@@ -40,13 +42,15 @@ Page({
         "grid9": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fqjk3ykk02j20xc1e0tc6.jpg"
       },
       "photo3": {
-        "id": 3,
         "title": "《“瞎子”Lolita》",
         "description":
-        "摄，后期：李肖遥\n" +
-        "出镜：@温柔少女鹿\n" +
-        "裙：@This-time洋装\n" +
-        "棚：@NEKORA猫罗万象摄影工作室​​",
+          "摄，后期：李肖遥\n" +
+          "出镜：@温柔少女鹿\n" +
+          "裙：@This-time洋装\n" +
+          "棚：@NEKORA猫罗万象摄影工作室​​",
+        "descriptionDetail":
+          "这是一组闭（xia）眼（zi）lolita\n" +
+          "小鹿姐姐表示哭笑不得哈哈哈哈哈哈\n",
         "photo": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fpkp8y5olsj22kw3vcnpl.jpg",
         "grid1": "https://wx2.sinaimg.cn/mw690/6029e1d2gy1fpkozdwj42j20qo140tdv.jpg",
         "grid2": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fpkp6fa0u8j228e3ck1l0.jpg",
@@ -58,30 +62,32 @@ Page({
         "grid8": "https://wx3.sinaimg.cn/mw690/6029e1d2gy1fpkp9bamslj20qo140grk.jpg"
       },
       "photo4": {
-        "id": 4,
-        "title": "《想对你说的话 都在星星里》",
+        "title": "《那些你们喜欢的不喜欢的我都喜欢的女孩——（一）》",
         "description":
-        "摄，后期：李肖遥\n" +
-        "出镜：@温柔少女鹿\n" +
-        "服装：@栗2011 \n" +
-        "棚：@NEKORA猫罗万象摄影工作室​​",
-        "photo": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fpdpk90fyxj22kw3vcqvd.jpg",
-        "grid1": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpde8vabj20qo140wkc.jpg",
-        "grid2": "https://wx3.sinaimg.cn/mw690/6029e1d2gy1fpdpdf4t9xj21400qotdn.jpg",
-        "grid3": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpdfvizrj20qo1400ym.jpg",
-        "grid4": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpdcszl4j20qo140agy.jpg",
-        "grid5": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fpdpk90fyxj22kw3vcqvd.jpg",
-        "grid6": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpejg3h8j20qo140afj.jpg",
-        "grid7": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpekckg6j20qo140wjs.jpg",
-        "grid8": "https://wx3.sinaimg.cn/mw690/6029e1d2gy1fpdpdgmdl9j20qo140q8m.jpg",
-        "grid9": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpdpel9qs7j20qo140n2i.jpg"
+          "出镜：@仙璃璃回归哥特\n" +
+          "摄：削爷 & 李肖遥\n" +
+          "妆造、后期：李肖遥\n" +
+          "裙：@长耳朵与尖耳朵\n" +
+          "鞋：@仙太郎Sentaro\n" +
+          "披肩，手套，花丸：@仙璃璃回归哥特",
+        "descriptionDetail": "",
+        "photo": "../../resources/photos/photo1.jpg",
+        "grid1": "https://wx2.sinaimg.cn/mw690/6029e1d2gy1fr0gy8pi26j21n662ru10.jpg",
+        "grid2": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fr0gzntvo3j21n662r4qs.jpg",
+        "grid3": "https://wx3.sinaimg.cn/mw690/6029e1d2gy1fr0gywa9gvj20qn2qmtqn.jpg",
+        "grid4": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fr0h3botb4j21n662r4qs.jpg",
+        "grid5": "https://wx2.sinaimg.cn/mw690/6029e1d2gy1fr0gyg99e3j21n662ru10.jpg",
+        "grid6": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fr0gyts3fwj21n662rnpf.jpg",
+        "grid7": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fr0gynhux4j21n662r7wk.jpg",
+        "grid8": "https://wx2.sinaimg.cn/mw690/6029e1d2gy1fr0h3tbnmgj20qn2qm1dd.jpg",
+        "grid9": "https://wx1.sinaimg.cn/mw690/6029e1d2gy1fr0h349d43j21n662rkjo.jpg"
       },
       "photo5": {
-        "id": 5,
         "title": "《小鹿@外滩》",
         "description":
-        "摄，后期：李肖遥\n" +
-        "出镜：@温柔少女鹿\n",
+          "摄，后期：李肖遥\n" +
+          "出镜：@温柔少女鹿\n",
+        "descriptionDetail": "",
         "photo": "https://wx4.sinaimg.cn/mw690/6029e1d2gy1fpsefrjymjj22kw3vc4qr.jpg",
         "grid1": "https://wx2.sinaimg.cn/mw690/6029e1d2gy1fpsedf2qc7j22kw3vcu0z.jpg",
         "grid2": "https://wx2.sinaimg.cn/mw690/6029e1d2gy1fpsed840d8j22kw3vckjo.jpg",
