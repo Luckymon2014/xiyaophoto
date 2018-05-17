@@ -3,8 +3,9 @@
   "pages": [
     "pages/home/home",
     "pages/photo/photo",
-    "pages/contact/contact",
-    "pages/photo/photoDetail/photoDetail"
+    "pages/photo/photoDetail/photoDetail",
+    "pages/calendar/calendar",
+    "pages/contact/contact"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -13,7 +14,7 @@
     "backgroundColor": "#aaaaaa",
     "enablePullDownRefresh": false
   },
-  "tabBar": {    
+  "tabBar": {
     "color": "#2c2c2c",
     "selectedColor": "#ffffff",
     "backgroundColor": "#aaaaaa",
@@ -25,7 +26,7 @@
         "text": "首页",
         "iconPath": "resources/icons/home_b.png",
         "selectedIconPath": "resources/icons/home_w.png"
-      },    
+      },
       {
         "pagePath": "pages/photo/photo",
         "text": "作品",
@@ -33,17 +34,29 @@
         "selectedIconPath": "resources/icons/photo_w.png"
       },
       {
+        "pagePath": "pages/calendar/calendar",
+        "text": "日历",
+        "iconPath": "resources/icons/calendar_b.png",
+        "selectedIconPath": "resources/icons/calendar_w.png"
+      },
+      {
         "pagePath": "pages/contact/contact",
         "text": "联系方式",
         "iconPath": "resources/icons/contact_b.png",
         "selectedIconPath": "resources/icons/contact_w.png"
-      }      
+      }
     ]
   },
   "networkTimeout": {
     "request": 10000,
-    "connectSocket":10000,
+    "connectSocket": 10000,
     "uploadFile": 60000,
     "downloadFile": 60000
+  },
+  "plugins": {
+    "calendar": {
+      "version": "1.1.0",
+      "provider": "wx92c68dae5a8bb046"
+    }
   }
 }
