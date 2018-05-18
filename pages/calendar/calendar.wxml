@@ -5,15 +5,17 @@
 	</view>
 	<view class="page__bd">
 		<calendar show-more-days="true" weeks-type="cn" 
+			calendar-style="calendar"
+			header-style="header" 
+			board-style="board"
 			year="{{year}}" month="{{month}}" day="{{day}}" 
 			days-color="{{selectedDays}}"
 			binddateChange="dateChange" 
 			binddayClick="dayClick" 
 			bindnextMonth="next" 
 			bindprevMonth="prev" 
-			calendar-style="calendar"
-			header-style="header" 
-			board-style="board"/>
+			bindtouchstart="calendarTouchstart" 
+			bindtouchmove="calendarTouchmove"/>
 		<button class="weui-btn" type="primary" plain="true" bindtap="returnToday">返回今天</button>
 		<!-- <view class="weui-cells weui-cells_after-title">
 			<view class="weui-cell" wx:for="{{appointments}}" wx:key="appointmentsId" bindtap="clickAppoint" data-year="{{item.year}}" data-month="{{item.month}}">
