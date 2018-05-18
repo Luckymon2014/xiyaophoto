@@ -1,1 +1,25 @@
-<calendar />
+<view class="page">
+	<view class="page__hd">
+		<view class="page__title">我们的拍摄计划</view>
+		<text class="page__desc"></text>
+	</view>
+	<view class="page__bd">
+		<calendar show-more-days="true" weeks-type="cn" 
+			year="{{year}}" month="{{month}}" day="{{day}}" 
+			days-color="{{selectedDays}}"
+			binddateChange="dateChange" 
+			binddayClick="dayClick" 
+			bindnextMonth="next" 
+			bindprevMonth="prev" 
+			calendar-style="calendar"
+			header-style="header" 
+			board-style="board"/>
+		<button class="weui-btn" type="primary" plain="true" bindtap="returnToday">返回今天</button>
+		<!-- <view class="weui-cells weui-cells_after-title">
+			<view class="weui-cell" wx:for="{{appointments}}" wx:key="appointmentsId" bindtap="clickAppoint" data-year="{{item.year}}" data-month="{{item.month}}">
+				<view class="weui-cell__bd">{{item.year}}/{{item.month}}/{{item.day}}</view>
+				<view class="weui-cell__ft"></view>
+			</view>
+		</view> -->
+	</view>
+</view>
