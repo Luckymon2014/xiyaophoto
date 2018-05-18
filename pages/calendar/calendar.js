@@ -48,6 +48,14 @@ Page({
 			selectedDays: selectedDays,
 		})
 	},
+	// 点击日期事件
+	dayClick: function (e) {
+		console.log(e.detail);
+	},
+	// 点击日历标题日期选择器事件
+	dateChange: function (e) {
+		this.selectDays(this.data.appointments, e.detail.currentYear, e.detail.currentMonth);
+	},
 	// 返回今天事件
 	returnToday: function () {
 		this.setData({
