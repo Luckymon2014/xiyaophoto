@@ -4,7 +4,7 @@
         <view class="page__desc">～(￣▽￣～)(～￣▽￣)～</view>
     </view>
     <view class="page__bd">
-        <template is="photo" wx:for="{{photoList}}" wx:key="unique" data="{{...item}}" />
+        <template is="photo" wx:for="{{photoList}}" wx:key="photoListId" data="{{...item}}" />
     </view>
 </view>
 

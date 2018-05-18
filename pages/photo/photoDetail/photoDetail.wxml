@@ -6,7 +6,7 @@
   <view class="page__bd">
     <view class="weui-grids">
       <view>
-        <image class="weui-grid" mode="aspectFill" wx:for="{{photos}}" wx:key="unique" src="{{item}}" data-index="{{index}}" bindtap="previewImage"></image>
+        <image class="weui-grid" mode="aspectFill" wx:for="{{photos}}" wx:key="photosId" src="{{item}}" data-index="{{index}}" bindtap="previewImage"></image>
       </view>
     </view>
   </view>

@@ -1,3 +1,5 @@
+var fileData = require('../../resources/data.js'); 
+
 const today = new Date();
 Page({
 	data: {
@@ -5,23 +7,7 @@ Page({
 		"month": today.getMonth() + 1,
 		"day": today.getDate(),
 		"selectedDays": [],
-		"appointments": [
-			{
-				"year": "2018",
-				"month": "5",
-				"day": "13",
-			},
-			{
-				"year": "2018",
-				"month": "6",
-				"day": "9",
-			},
-			{
-				"year": "2018",
-				"month": "6",
-				"day": "24",
-			}
-		],
+		"appointments": fileData.mtData().appointments,
 	},
 	onLoad() {
 		this.selectDays(this.data.appointments, this.data.year, this.data.month);
