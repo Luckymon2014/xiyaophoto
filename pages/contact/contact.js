@@ -21,11 +21,6 @@ Page({
         "qq": "1091490695",
         "wechat": "naichacha227",
         "weibo": "卖水晶的奶茶"
-      },
-      "xiaolu": {
-        "name": "模特：小鹿",
-        "photo": "/resources/contact/xiaolu.png",
-        "weibo": "温柔少女鹿 ​​​​"
       }
     }
   }

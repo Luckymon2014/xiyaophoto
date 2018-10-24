@@ -23,19 +23,19 @@
         </view>
         <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
             <view class="weui-flex__item" wx:if="{{name}}">
-                <image src="/resources/icons/name.png" mode="scaleToFill" />
+                <image src="/resources/contact/name.png" mode="scaleToFill" />
                 <text space="ensp"> {{name}}</text>
             </view>
             <view class="weui-flex__item" wx:if="{{qq}}">
-                <image src="/resources/icons/qq.png" mode="scaleToFill" />
+                <image src="/resources/contact/qq.png" mode="scaleToFill" />
                 <text space="ensp"> {{qq}}</text>
             </view>
             <view class="weui-flex__item" wx:if="{{wechat}}">
-                <image src="/resources/icons/wechat.png" mode="scaleToFill" />
+                <image src="/resources/contact/wechat.png" mode="scaleToFill" />
                 <text space="ensp"> {{wechat}}</text>
             </view>
             <view class="weui-flex__item" wx:if="{{weibo}}">
-                <image src="/resources/icons/weibo.png" mode="scaleToFill" />
+                <image src="/resources/contact/weibo.png" mode="scaleToFill" />
                 <text space="ensp"> {{weibo}}</text>
             </view>
         </view>

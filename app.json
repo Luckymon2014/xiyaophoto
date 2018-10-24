@@ -4,7 +4,8 @@
     "pages/home/home",
     "pages/photo/photo",
     "pages/photo/photoDetail/photoDetail",
-    "pages/calendar/calendar",
+    "pages/dress/dress",
+    "pages/scene/scene",
     "pages/contact/contact"
   ],
   "window": {
@@ -17,7 +18,7 @@
   "tabBar": {
     "color": "#2c2c2c",
     "selectedColor": "#ffffff",
-    "backgroundColor": "#aaaaaa",
+    "backgroundColor": "#a9b49b",
     "borderStyle": "white",
     "position": "buttom",
     "list": [
@@ -26,20 +27,22 @@
         "text": "首页",
         "iconPath": "resources/icons/home_b.png",
         "selectedIconPath": "resources/icons/home_w.png"
-      },
-      {
+      }, {
         "pagePath": "pages/photo/photo",
         "text": "作品",
         "iconPath": "resources/icons/photo_b.png",
         "selectedIconPath": "resources/icons/photo_w.png"
-      },
-      {
-        "pagePath": "pages/calendar/calendar",
-        "text": "日历",
-        "iconPath": "resources/icons/calendar_b.png",
-        "selectedIconPath": "resources/icons/calendar_w.png"
-      },
-      {
+      }, {
+        "pagePath": "pages/dress/dress",
+        "text": "服装",
+        "iconPath": "resources/icons/dress_b.png",
+        "selectedIconPath": "resources/icons/dress_w.png"
+      }, {
+        "pagePath": "pages/scene/scene",
+        "text": "场景",
+        "iconPath": "resources/icons/scene_b.png",
+        "selectedIconPath": "resources/icons/scene_w.png"
+      }, {
         "pagePath": "pages/contact/contact",
         "text": "联系方式",
         "iconPath": "resources/icons/contact_b.png",
