@@ -2,13 +2,13 @@
   "debug": true,
   "pages": [
     "pages/home/home",
+    "pages/campaign/campaign",
     "pages/photo/photo",
     "pages/photo/photoDetail/photoDetail",
-    "pages/dress/dressCatalog/dressCatalog",
-    "pages/dress/dress",
     "pages/scene/scene",
     "pages/scene/sceneDetail/sceneDetail",
-    "pages/contact/contact"
+    "pages/dress/dressCatalog/dressCatalog",
+    "pages/dress/dress"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -30,25 +30,25 @@
         "iconPath": "resources/icons/home_b.png",
         "selectedIconPath": "resources/icons/home_w.png"
       }, {
+        "pagePath": "pages/campaign/campaign",
+        "text": "活动",
+        "iconPath": "resources/icons/campaign_b.png",
+        "selectedIconPath": "resources/icons/campaign_w.png"
+      }, {
         "pagePath": "pages/photo/photo",
         "text": "作品",
         "iconPath": "resources/icons/photo_b.png",
         "selectedIconPath": "resources/icons/photo_w.png"
-      }, {
-        "pagePath": "pages/dress/dressCatalog/dressCatalog",
-        "text": "服装",
-        "iconPath": "resources/icons/dress_b.png",
-        "selectedIconPath": "resources/icons/dress_w.png"
       }, {
         "pagePath": "pages/scene/scene",
         "text": "场景",
         "iconPath": "resources/icons/scene_b.png",
         "selectedIconPath": "resources/icons/scene_w.png"
       }, {
-        "pagePath": "pages/contact/contact",
-        "text": "联系方式",
-        "iconPath": "resources/icons/contact_b.png",
-        "selectedIconPath": "resources/icons/contact_w.png"
+        "pagePath": "pages/dress/dressCatalog/dressCatalog",
+        "text": "服装",
+        "iconPath": "resources/icons/dress_b.png",
+        "selectedIconPath": "resources/icons/dress_w.png"
       }
     ]
   },
