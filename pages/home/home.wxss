@@ -1,6 +1,11 @@
-page{
-    background-color: #FFFFFF;
+page {
+  background-color: #a9b49b;
 }
-image{
-    margin: 4px 0;
+
+image {
+  margin: 4px 0;
+}
+
+.homeImg {
+  width: 100%
 }

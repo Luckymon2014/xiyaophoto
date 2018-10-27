@@ -1,0 +1,32 @@
+<view class="page">
+  <view class="weui-flex">
+    <view class="weui-flex__item">
+      <!-- lolita -->
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <image class="dress-image" mode="widthFix" src="{{catalogLolita}}" bindtap="dress" data-dress-type="lolita" />
+        </view>
+      </view>
+      <!-- 汉服 -->
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <image class="dress-image" mode="widthFix" src="{{catalogGufeng}}" bindtap="dress" data-dress-type="gufeng" />
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex__item">
+      <!-- lolita -->
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <image class="dress-image" mode="widthFix" src="{{catalogHanfu}}" bindtap="dress" data-dress-type="hanfu" />
+        </view>
+      </view>
+      <!-- 汉服 -->
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <image class="dress-image" mode="widthFix" src="{{catalogRichang}}" bindtap="dress" data-dress-type="richang" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

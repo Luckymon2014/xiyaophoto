@@ -1,12 +1,13 @@
 {
   "debug": true,
   "pages": [
-    "pages/scene/scene",
     "pages/home/home",
     "pages/photo/photo",
     "pages/photo/photoDetail/photoDetail",
-    "pages/scene/sceneDetail/sceneDetail",
+    "pages/dress/dressCatalog/dressCatalog",
     "pages/dress/dress",
+    "pages/scene/scene",
+    "pages/scene/sceneDetail/sceneDetail",
     "pages/contact/contact"
   ],
   "window": {
@@ -34,7 +35,7 @@
         "iconPath": "resources/icons/photo_b.png",
         "selectedIconPath": "resources/icons/photo_w.png"
       }, {
-        "pagePath": "pages/dress/dress",
+        "pagePath": "pages/dress/dressCatalog/dressCatalog",
         "text": "服装",
         "iconPath": "resources/icons/dress_b.png",
         "selectedIconPath": "resources/icons/dress_w.png"

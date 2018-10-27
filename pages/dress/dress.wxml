@@ -1,19 +1,19 @@
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">服装列表</view>
-        <view class="page__desc">～(￣▽￣～)(～￣▽￣)～</view>
+  <view class="weui-flex">
+    <view class="weui-flex__item">
+      <template is="dress" wx:for="{{dressList1}}" wx:key="dressListId" data="{{...item}}" />
     </view>
-    <view class="page__bd">
-        <template is="photo" wx:for="{{photoList}}" wx:key="photoListId" data="{{...item}}" />
+    <view class="weui-flex__item">
+      <template is="dress" wx:for="{{dressList2}}" wx:key="dressListId" data="{{...item}}" />
     </view>
+  </view>
 </view>
 
 <!-- template -->
-<template name="photo">
-    <view class="weui-article">
-        <view class="weui-article__h1">{{title}}</view>
-        <view class="weui-article__section">
-            <image class="weui-article__img" mode="widthFix" src="{{photo}}" />
-        </view>
+<template name="dress">
+  <view class="weui-flex">
+    <view class="weui-flex__item">
+      <image class="dress-image" mode="widthFix" src="{{dress}}"/>
     </view>
+  </view>
 </template>
