@@ -1,22 +1,19 @@
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">我们的作品</view>
-        <view class="page__desc">～(￣▽￣～)(～￣▽￣)～</view>
+  <view class="weui-flex">
+    <view class="weui-flex__item">
+      <template is="photo" wx:for="{{photoList1}}" wx:key="photoListId" data="{{...item}}" />
     </view>
-    <view class="page__bd">
-        <template is="photo" wx:for="{{photoList}}" wx:key="photoListId" data="{{...item}}" />
+    <view class="weui-flex__item">
+      <template is="photo" wx:for="{{photoList2}}" wx:key="photoListId" data="{{...item}}" />
     </view>
+  </view>
 </view>
 
 <!-- template -->
 <template name="photo">
-    <view class="weui-article">
-        <view class="weui-article__h1">{{title}}</view>
-        <view class="weui-article__section">
-            <text class="weui-article__p">{{description}}</text>
-            <navigator url="/pages/photo/photoDetail/photoDetail?title={{title}}&descriptionDetail={{descriptionDetail}}&grid1={{grid1}}&grid2={{grid2}}&grid3={{grid3}}&grid4={{grid4}}&grid5={{grid5}}&grid6={{grid6}}&grid7={{grid7}}&grid8={{grid8}}&grid9={{grid9}}&grid1={{grid1}}">
-                <image class="weui-article__img" mode="widthFix" src="{{photo}}" />
-            </navigator>
-        </view>
+  <view class="weui-flex">
+    <view class="weui-flex__item">
+      <image class="photo-image" mode="widthFix" src="{{photo}}" bindtap="photoDetail" data-photo-list="{{photos}}"/>
     </view>
+  </view>
 </template>

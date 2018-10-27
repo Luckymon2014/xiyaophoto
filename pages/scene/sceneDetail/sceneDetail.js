@@ -1,7 +1,7 @@
 Page({
   onLoad: function (options) {
     this.setData({
-      photos: JSON.parse(options.photos),
+      scenes: JSON.parse(options.scenes),
     })
     console.log(this.data)
   },
@@ -13,12 +13,12 @@ Page({
       //获取当前图片的下标
       index = e.currentTarget.dataset.index,
       //数据源
-      photos = this.data.photos;
+      scenes = this.data.scenes;
     wx.previewImage({
       //当前显示下表
-      current: photos[index],
+      current: scenes[index],
       //数据源
-      urls: photos
+      urls: scenes
     })
   }
 })

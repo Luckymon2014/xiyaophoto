@@ -1,11 +1,12 @@
 {
   "debug": true,
   "pages": [
+    "pages/scene/scene",
     "pages/home/home",
     "pages/photo/photo",
     "pages/photo/photoDetail/photoDetail",
+    "pages/scene/sceneDetail/sceneDetail",
     "pages/dress/dress",
-    "pages/scene/scene",
     "pages/contact/contact"
   ],
   "window": {

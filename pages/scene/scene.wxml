@@ -1,19 +1,19 @@
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">场景列表</view>
-        <view class="page__desc">～(￣▽￣～)(～￣▽￣)～</view>
+  <view class="weui-flex">
+    <view class="weui-flex__item">
+      <template is="scene" wx:for="{{sceneList1}}" wx:key="sceneListId" data="{{...item}}" />
     </view>
-    <view class="page__bd">
-        <template is="photo" wx:for="{{photoList}}" wx:key="photoListId" data="{{...item}}" />
+    <view class="weui-flex__item">
+      <template is="scene" wx:for="{{sceneList2}}" wx:key="sceneListId" data="{{...item}}" />
     </view>
+  </view>
 </view>
 
 <!-- template -->
-<template name="photo">
-    <view class="weui-article">
-        <view class="weui-article__h1">{{title}}</view>
-        <view class="weui-article__section">
-            <image class="weui-article__img" mode="widthFix" src="{{photo}}" />
-        </view>
+<template name="scene">
+  <view class="weui-flex">
+    <view class="weui-flex__item">
+      <image class="scene-image" mode="widthFix" src="{{scene}}" bindtap="sceneDetail" data-scene-list="{{scenes}}"/>
     </view>
+  </view>
 </template>
