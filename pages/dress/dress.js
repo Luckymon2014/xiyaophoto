@@ -5,7 +5,7 @@ Page({
     var dressType = options.dressType;
     var dressList1, dressList2;
     console.log(dressType);
-    switch(dressType) {
+    switch (dressType) {
       case "lolita":
         dressList1 = fileData.mtData().dressListLolita1;
         dressList2 = fileData.mtData().dressListLolita2;
@@ -33,10 +33,26 @@ Page({
   },
   data: {
   },
-  dressDetail: function (e) {
-    var dresss = e.currentTarget.dataset.dressList;
-    wx.navigateTo({
-      url: '/pages/dress/dressDetail/dressDetail?dresss=' + JSON.stringify(dresss)
+  // 图片点击事件
+  previewImage: function (e) {
+    // 当前图片url
+    var url = e.currentTarget.dataset.src;
+    // 从服装列表里获取所有服装url
+    var urls = new Array();
+    // var dressList = this.data.dressList1.concat(this.data.dressList2);
+    // for (var i in dressList) {
+    //   urls[i] = dressList[i].dress;
+    // }
+    for (var i = 0; i < this.data.dressList1.length + this.data.dressList2.length; i++) {
+      if (i % 2 == 0)
+        urls[i] = this.data.dressList1[i / 2].dress;
+      else
+        urls[i] = this.data.dressList2[(i - 1) / 2].dress;
+    }
+
+    wx.previewImage({
+      current: url,
+      urls: urls
     })
   }
 })

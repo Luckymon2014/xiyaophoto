@@ -13,7 +13,7 @@
 <template name="dress">
   <view class="weui-flex">
     <view class="weui-flex__item">
-      <image class="dress-image" mode="widthFix" src="{{dress}}"/>
+      <image class="dress-image" mode="widthFix" src="{{dress}}" bindtap="previewImage" data-src="{{dress}}"/>
     </view>
   </view>
 </template>
