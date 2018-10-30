@@ -1,4 +1,5 @@
-var mtUrl = "https://xiyao-1256731092.cos.ap-shanghai.myqcloud.com/";
+var mtUrl = "https://xiyao-1256731092.file.myqcloud.com/";
+// var mtUrl = "https://xiyao-1256731092.cos.ap-shanghai.myqcloud.com/"
 
 module.exports = {
   mtData: mtData,
@@ -115,10 +116,10 @@ function mtData() {
     else
       dressListHanfu2[(i - 1) / 2] = new Dress("汉服", i + 1);
   }
-  // 日常 7
+  // 日常 9
   var dressListRichang1 = new Array();
   var dressListRichang2 = new Array();
-  for (var i = 0; i < 7; i++) {
+  for (var i = 0; i < 9; i++) {
     if (i % 2 == 0)
       dressListRichang1[i / 2] = new Dress("日常", i + 1);
     else
