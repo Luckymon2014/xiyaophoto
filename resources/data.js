@@ -1,4 +1,4 @@
-var mtUrl = "https://lg-gk65vilg-1256731092.cos.ap-shanghai.myqcloud.com/";
+var mtUrl = "https://xiyao-1256731092.cos.ap-shanghai.myqcloud.com/";
 
 module.exports = {
   mtData: mtData,
@@ -20,19 +20,20 @@ function searchmtdata(id) {
  * 单个照片构造函数
  */
 function Photo(name) {
+  var photoUrl = mtUrl + "作品/" + name + "/";
   // 首图
-  this.photo = mtUrl + name + " (0).jpg";
+  this.photo = photoUrl + name + " (0).jpg";
   // 九宫格
   this.photos = [
-    mtUrl + name + " (0).jpg",
-    mtUrl + name + " (1).jpg",
-    mtUrl + name + " (2).jpg",
-    mtUrl + name + " (3).jpg",
-    mtUrl + name + " (4).jpg",
-    mtUrl + name + " (5).jpg",
-    mtUrl + name + " (6).jpg",
-    mtUrl + name + " (7).jpg",
-    mtUrl + name + " (8).jpg",
+    photoUrl + name + " (0).jpg",
+    photoUrl + name + " (1).jpg",
+    photoUrl + name + " (2).jpg",
+    photoUrl + name + " (3).jpg",
+    photoUrl + name + " (4).jpg",
+    photoUrl + name + " (5).jpg",
+    photoUrl + name + " (6).jpg",
+    photoUrl + name + " (7).jpg",
+    photoUrl + name + " (8).jpg",
   ];
 }
 
@@ -40,19 +41,22 @@ function Photo(name) {
  * 单个服装构造函数
  */
 function Dress(dressType, dressId) {
-  this.dress = mtUrl + dressType + " (" + dressId + ").jpg";
+  this.dress = mtUrl + "服装/" + dressType + "/" + dressType + " (" + dressId + ").jpg";
 }
 
 /**
  * 单个场景构造函数
  */
 function Scene(name) {
+  var sceneName = name.name;
+  var sceneNum = name.num;
+  var sceneUrl = mtUrl + "场景/" + sceneName + "/";
   // 首图
-  this.scene = mtUrl + name.name + "0.jpg";
+  this.scene = sceneUrl + sceneName + "0.jpg";
   // 细节
   this.scenes = new Array();
-  for (var i = 0; i < name.num; i++) {
-    this.scenes[i] = mtUrl + name.name + i + ".jpg";
+  for (var i = 0; i < sceneNum; i++) {
+    this.scenes[i] = sceneUrl + sceneName + i + ".jpg";
   }
 }
 
@@ -64,7 +68,7 @@ function mtData() {
   // 照片列表
   var photoNameList = [
     "白白", "百合",
-    "乐瑶", "梦花源肖削",
+    "乐瑶", "梦花源",
     "旗袍", "双人jk",
     "乌冬面", "小鹿",
     "小鹿lo", "小鹿汉服",
@@ -139,6 +143,8 @@ function mtData() {
   // 资源数据列表
   var mtData = {
     "mtUrl": mtUrl,
+    "homeImgUrl": mtUrl + "首页/background.jpg",
+    "campaignImgUrl": mtUrl + "活动/campaign.jpg",
     "photoList1": photoList1,
     "photoList2": photoList2,
     "dressListLolita1": dressListLolita1,

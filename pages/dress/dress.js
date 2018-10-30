@@ -39,10 +39,6 @@ Page({
     var url = e.currentTarget.dataset.src;
     // 从服装列表里获取所有服装url
     var urls = new Array();
-    // var dressList = this.data.dressList1.concat(this.data.dressList2);
-    // for (var i in dressList) {
-    //   urls[i] = dressList[i].dress;
-    // }
     for (var i = 0; i < this.data.dressList1.length + this.data.dressList2.length; i++) {
       if (i % 2 == 0)
         urls[i] = this.data.dressList1[i / 2].dress;

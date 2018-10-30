@@ -1,5 +1,5 @@
 <view class="page">
-  <image class="homeImg" mode="widthFix" src="https://lg-gk65vilg-1256731092.cos.ap-shanghai.myqcloud.com/background.jpg" />
+  <image class="homeImg" mode="widthFix" src="{{homeImg}}" />
     <!-- <view class="page__hd">
         <view class="page__title">关于我们</view>
         <view class="page__desc">这里写一些概要描述</view>
