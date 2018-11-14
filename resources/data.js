@@ -89,41 +89,50 @@ function mtData() {
   }
 
   // 服装列表
+  var num = 0;
   // lolita 24
+  num = 24;
   var dressListLolita1 = new Array();
   var dressListLolita2 = new Array();
-  for (var i = 0; i < 24; i++) {
+  for (var i = 0; i < num; i++) {
+    var dress = new Dress("lolita", num - i);
     if (i % 2 == 0)
-      dressListLolita1[i / 2] = new Dress("lolita", i + 1);
+      dressListLolita1[i / 2] = dress;
     else
-      dressListLolita2[(i - 1) / 2] = new Dress("lolita", i + 1);
+      dressListLolita2[(i - 1) / 2] = dress;
   }
   // 古风 9
+  num = 9
   var dressListGufeng1 = new Array();
   var dressListGufeng2 = new Array();
   for (var i = 0; i < 9; i++) {
+    var dress = new Dress("古风", num - i);
     if (i % 2 == 0)
-      dressListGufeng1[i / 2] = new Dress("古风", i + 1);
+      dressListGufeng1[i / 2] = dress;
     else
-      dressListGufeng2[(i - 1) / 2] = new Dress("古风", i + 1);
+      dressListGufeng2[(i - 1) / 2] = dress;
   }
   // 汉服 19
+  num = 19
   var dressListHanfu1 = new Array();
   var dressListHanfu2 = new Array();
   for (var i = 0; i < 19; i++) {
+    var dress = new Dress("汉服", num - i);
     if (i % 2 == 0)
-      dressListHanfu1[i / 2] = new Dress("汉服", i + 1);
+      dressListHanfu1[i / 2] = dress;
     else
-      dressListHanfu2[(i - 1) / 2] = new Dress("汉服", i + 1);
+      dressListHanfu2[(i - 1) / 2] = dress;
   }
   // 日常 26
+  num = 26
   var dressListRichang1 = new Array();
   var dressListRichang2 = new Array();
   for (var i = 0; i < 26; i++) {
+    var dress = new Dress("日常", num - i);
     if (i % 2 == 0)
-      dressListRichang1[i / 2] = new Dress("日常", i + 1);
+      dressListRichang1[i / 2] = dress;
     else
-      dressListRichang2[(i - 1) / 2] = new Dress("日常", i + 1);
+      dressListRichang2[(i - 1) / 2] = dress;
   }
 
   // 场景列表
