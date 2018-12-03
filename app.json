@@ -30,11 +30,6 @@
         "iconPath": "resources/icons/home_b.png",
         "selectedIconPath": "resources/icons/home_w.png"
       }, {
-        "pagePath": "pages/campaign/campaign",
-        "text": "活动",
-        "iconPath": "resources/icons/campaign_b.png",
-        "selectedIconPath": "resources/icons/campaign_w.png"
-      }, {
         "pagePath": "pages/photo/photo",
         "text": "作品",
         "iconPath": "resources/icons/photo_b.png",
